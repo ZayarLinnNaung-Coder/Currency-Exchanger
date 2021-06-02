@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZEx Currency Exchanger</title>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="css/query.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="loader" id="loader">
+    <img src="img/light.svg" alt="">
+</div>
+<body>
+    <i class="mode-changer" data-feather="moon" onclick="changeMode()"></i>
+    <div class="container">
+        <div class="row result-row">
+            <div class="col">
+                <img src="img/dark.svg" class="logo" alt="">
+                <p class="brand">ZEx</p>
+            </div>
+            <div class="col">
+                <p class="result" id="result">0.00</p>
+            </div>
+        </div>
+        <div class="row calculate-row">
+            <div class="col">
+                <label for="amount">Input</label>
+                <input type="number" id="amount" autofocus>
+            </div>
+            <div class="col">
+                <label for="from">From</label>
+                <select name="from" id="from">
+                    <option selected disabled>Choose country</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="to">To</label>
+                <select name="to" id="to">
+                    <option selected disabled>Choose country</option>
+                </select>
+            </div>
+            <div class="col">
+                <button onclick="showResult()">CALCULATE</button>
+            </div>
+        </div>
+        <div class="row table-row">
+            <div class="col">
+                <table id="resultTable">
+                    <tr>
+                        <th style="width: 40%">Time</th>
+                        <th style="width: 15%">From</th>
+                        <th style="width: 15%">To</th>
+                        <th style="width: *">Result</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/mode.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

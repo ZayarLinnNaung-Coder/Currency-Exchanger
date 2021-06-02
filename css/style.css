@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+html, body{
+    background-color: var(--primary-light-color);
+}
+*{
+    color: var(--primary-dark-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+.mode-changer{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-dark-color);
+    stroke: var(--primary-light-color);
+    box-shadow: 1px 1px 5px var(--primary-dark-color);
+}
+.mode-changer:hover{
+    box-shadow: none;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.container .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.container .result-row{
+    justify-content: space-between;
+    border-bottom: 5px solid var(--primary-literal-color);
+}
+.container .result-row .col{
+    display: flex;
+}
+.container .result-row .col .logo{
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.container .result-row .col .brand{
+    font-size: 32px;
+}
+.container .result-row .col .result{
+    font-size: 44px;
+}
+
+/*****************************************************
+ /* CALCULATE ROW
+/*****************************************************/
+.container .calculate-row .col{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.container .calculate-row .col label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.container .calculate-row .col input, .container .calculate-row .col select{
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: var(--primary-light-color);
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+}
+.container .calculate-row .col input:focus-visible, .container .calculate-row .col select:focus-visible{
+    outline: none;
+}
+
+.container .calculate-row .col input{
+    padding: 0 10px;
+    text-align: right;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.container .calculate-row .col select{
+    appearance: none;
+    padding-left: 5px;
+}
+
+
+.container .calculate-row .col button{
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+    border: 0;
+    outline: none;
+    background-color: var(--primary-literal-color);
+    color: var(--primary-light-color);
+    font-size: 16px;
+    -webkit-box-shadow: 1px 1px 5px 0 var(--primary-dark-color);
+    -moz-box-shadow: 1px 1px 5px 0 var(--primary-dark-color);
+    box-shadow: 1px 1px 5px 0 var(--primary-dark-color);
+}
+.container .calculate-row .col button:hover{
+    box-shadow: none;
+    background-color: var(--primary-literal-soft-color);
+}
+
+/*****************************************************
+ /* CALCULATE ROW
+/*****************************************************/
+.container .table-row{
+    flex-direction: column;
+}
+.container .table-row .col{
+   width: 100%;
+    height: 400px;
+    overflow: auto;
+   display: flex;
+   flex-direction: column;
+}
+.container .table-row .col::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.container .table-row .col::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.container .table-row .col::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.container .table-row .col::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}{
+
+}
+.container .table-row .col table{
+
+}
+.container .table-row .col table tr{
+    height: 45px;
+    text-align: left;
+}
+.container .table-row .col table tr th{
+    background-color: var(--primary-literal-color);
+    color: var(--primary-light-color);
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.container .table-row .col table tr td{
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.container .table-row .col table tr:nth-child(odd) td{
+    background-color: var(--primary-literal-soft-color);
+}
